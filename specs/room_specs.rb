@@ -22,13 +22,13 @@ class RoomTest <MiniTest::Test
     assert_equal(1, @room.check_guests_in())
   end
 
-  # def test_check_guests_out()
-  #   assert_equal(nil, @room.check_guests_out_of_room())
-  # end
+  def test_room_booking()
+    assert_equal("Let me show you to your room", @room.room_booking())
+  end
 
-  # def test_check_guests_out()
-  #   assert_equal(nil, @room.check_guests_out_of_room())
-  # end
+  def test_check_guests_out()
+    assert_equal("A room has now become available", @room.check_guests_out_of_room())
+  end
 
 
   # def test_check_guests_into_room()
