@@ -18,10 +18,17 @@ class RoomTest <MiniTest::Test
     assert_equal(5, @room.number_of_available_rooms())
   end
 
-  def test_check_number_of_rooms_booked()
-    assert_equal(1, @room.number_of_rooms_booked())
+  def test_check_guests_in()
+    assert_equal(1, @room.check_guests_in())
   end
 
+  # def test_check_guests_out()
+  #   assert_equal(nil, @room.check_guests_out_of_room())
+  # end
+
+  # def test_check_guests_out()
+  #   assert_equal(nil, @room.check_guests_out_of_room())
+  # end
 
 
   # def test_check_guests_into_room()

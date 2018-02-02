@@ -11,14 +11,27 @@ class Room
     return @number_of_rooms.count()
   end
 
-  def number_of_rooms_booked()
+  def check_guests_in()
     @booked_rooms << @guests
     return @booked_rooms.count()
   end
 
-# def check_guests_into_room(guests)
-#   @booked_rooms << guests
-#   return
+  # def check_guests_in()
+  #   check_guests_in()
+  #   if (check_guests_in) >5
+  #   #
+  #   # @booked_rooms << @guests
+  #   # @booked_rooms.count
+  #   # if @booked_rooms.count() > 5
+  #   return "Sorry, all rooms are currenty in use"
+  # end
+  #
+  # end
+
+# def check_guests_out_of_room
+#   @booked_rooms << @guests
+#   @booked_rooms.pop
+#
 # end
 
 
