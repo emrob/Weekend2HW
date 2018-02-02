@@ -12,12 +12,13 @@ class Room
   end
 
   def number_of_rooms_booked()
+    @booked_rooms << @guests
     return @booked_rooms.count()
-  end  
+  end
 
-# def check_guests_into_room
-#   @booked_rooms <<
-#   return @booked_rooms.count(
+# def check_guests_into_room(guests)
+#   @booked_rooms << guests
+#   return
 # end
 
 
