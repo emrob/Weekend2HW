@@ -1,16 +1,36 @@
 require("minitest/autorun")
 require("minitest/rg")
 
+require_relative("../songs.rb")
 require_relative("../room.rb")
 require_relative("../guests.rb")
-require_relative("../songs.rb")
 
-class SongTest <MiniTest::Test
+
+class SongsTest <MiniTest::Test
 
   def setup
-    @song = Song.new("Hey Ya", "Outkast", "Hip Hop")
+    @songs = [
+      { title: "Hey Ya",
+        artist: "Outkast",
+        genre: "Hip Hop"
+      },
+      { title: "Thriller",
+        artist: "MJ",
+        genre: "Pop"
+      },
+      { title: "Hound Dog",
+        artist: "MJ",
+        genre: "Rock n roll"
+      },
+
+  ]
+
   end
 
+  def test_check_song_details
+    assert_equal("Hound Dog", @songs.check_song_details())
+
+  end
 
 
 end
