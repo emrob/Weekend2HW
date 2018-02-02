@@ -1,19 +1,19 @@
-# require("minitest/autorun")
-# require("minitest/rg")
-#
-# require_relative("../room.rb")
-# require_relative("../guests.rb")
-# require_relative("../songs.rb")
-#
-# class RoomTest <MiniTest::Test
-#
-#   def setup
-#
-#   end
-#
-#
-#
-# end
+require("minitest/autorun")
+require("minitest/rg")
+
+require_relative("../room.rb")
+require_relative("../guests.rb")
+require_relative("../songs.rb")
+
+class SongTest <MiniTest::Test
+
+  def setup
+    @song = Song.new("Hey Ya", "Outkast", "Hip Hop")
+  end
+
+
+
+end
 
 #
 # Create rooms, songs and guests
