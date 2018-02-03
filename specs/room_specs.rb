@@ -30,6 +30,7 @@ class RoomTest <MiniTest::Test
     assert_equal("A room has now become available", @room.check_guests_out_of_room())
   end
 
+end
 
   # def test_check_guests_into_room()
   #   # guests = Guests.new("Homer")
@@ -37,5 +38,3 @@ class RoomTest <MiniTest::Test
   #   assert_equal(0, @room.check_guests_into_room)
   #
   # end
-
-end

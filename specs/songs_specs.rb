@@ -9,6 +9,7 @@ require_relative("../guests.rb")
 class SongsTest <MiniTest::Test
 
   def setup
+
     @songs = [
       { title: "Hey Ya",
         artist: "Outkast",
@@ -21,21 +22,21 @@ class SongsTest <MiniTest::Test
       { title: "Hound Dog",
         artist: "MJ",
         genre: "Rock n roll"
-      },
-
-  ]
-
+      }
+    ]
+@playlist = Songs.new(@songs)
   end
 
-  def test_check_song_details
-    assert_equal("Hound Dog", @songs.check_song_details())
+def test_get_song_info
+assert_equal("Hey Ya", @playlist.get_song_info)
 
-  end
+end
+  # def test_check_song_details(title)
+  #   title = song_title(@songs)
+  #   assert_equal("Hound Dog", @songs.check_song_details(title)
+  # end
+
+
 
 
 end
-
-#
-# Create rooms, songs and guests
-# Check in guests to rooms/Check out guests from rooms
-# Add songs to rooms
