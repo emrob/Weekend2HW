@@ -31,29 +31,25 @@ class SongsTest <MiniTest::Test
   def test_get_song_info
     assert_equal("Hey Ya", @playlist.get_song_info)
   end
-  #
-  # def test_check_song_details(title)
-  #   title = song_title(@songs)
-  #   assert_equal("Hound Dog", @songs.check_song_details(title)
-  # end
-  #
-  #
-  #
-  # def test_add_song
-  #   @playlist.add_song("Stan")
-  #   result = @playlist.get_info_from_title("Stan")
-  #   assert_equal("Stan",result[:title])
-  #   # assert_equal("", result[:artist])
-  #   # assert_equal("", result[:genre])
-  # end
+
+
+  def test_add_song
+    @playlist.add_song("Stan")
+    result = @playlist.get_info_from_title("Stan")
+    assert_equal("Stan",result[:title])
+    assert_equal("",result[:artist])
+    assert_equal("",result[:genre])
+  end
 
   # def test_add_song
-  #   new_song = [{
+  #   new_song = {
   #     title: "Stan",
   #     artist: "Eminem",
   #     genre: "Rap"
-  #   }]
-  #   assert_equal(new_song, @songs.add_song)
+  #   }
+  #   assert_equal({title: "Stan",
+  #     artist: "Eminem",
+  #     genre: "Rap"}, @playlist.add_song)
   #
   # end
 
