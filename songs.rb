@@ -8,15 +8,7 @@ class Songs
     @songs = songs
   end
 
-  # def initialize(title, artist, genre)
 
-  # @title = title
-  # @artist = artist
-  # @genre = genre
-
-
-  # @songs = [@title, @artist, @genre]
-  # end
 
 
 
@@ -42,14 +34,7 @@ class Songs
     @songs.push(song)
   end
 
-# def add_song()
-#   new_song = {
-#       title: "",
-#       artist: "",
-#       genre: ""
-#     }
-#   @song.push(new_song)
-# end
+
 
 
 end

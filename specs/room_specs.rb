@@ -10,6 +10,16 @@ class RoomTest <MiniTest::Test
   def setup
   @room = Room.new([1, 2, 3, 4, 5])
   @guests = Guests.new("Marge")
+  @playlist1 = Songs.new([
+    { title: "Hey Ya",
+      artist: "Outkast",
+      genre: "Hip Hop"
+    },
+    { title: "Thriller",
+      artist: "MJ",
+      genre: "Pop"
+    }])
+
 
   end
 
@@ -30,11 +40,23 @@ class RoomTest <MiniTest::Test
     assert_equal("A room has now become available", @room.check_guests_out_of_room())
   end
 
-end
+# def test_room_playlist()
+#   @playlist1 = Songs.new(
+#     [
+#       { title: "Hey Ya",
+#         artist: "Outkast",
+#         genre: "Hip Hop"
+#       },
+#       { title: "Thriller",
+#         artist: "MJ",
+#         genre: "Pop"
+#       }]
+#     )
+#
+#
+#   assert_equal(["Hey ya", "Stan", "Thriller"], @room.room_playlist())
+#
+# end
 
-  # def test_check_guests_into_room()
-  #   # guests = Guests.new("Homer")
-  #   @room.check_guests_into_room(@guests)
-  #   assert_equal(0, @room.check_guests_into_room)
-  #
-  # end
+
+end

@@ -41,17 +41,5 @@ class SongsTest <MiniTest::Test
     assert_equal("",result[:genre])
   end
 
-  # def test_add_song
-  #   new_song = {
-  #     title: "Stan",
-  #     artist: "Eminem",
-  #     genre: "Rap"
-  #   }
-  #   assert_equal({title: "Stan",
-  #     artist: "Eminem",
-  #     genre: "Rap"}, @playlist.add_song)
-  #
-  # end
-
 
 end

@@ -5,6 +5,7 @@ class Room
   def initialize(number_of_rooms)
     @number_of_rooms = [1, 2, 3, 4, 5]
     @booked_rooms = []
+    @room_playlist = []
   end
 
   def number_of_available_rooms()
@@ -32,8 +33,12 @@ class Room
 
   end
 
-
-
+# 
+# def room_playlist
+#   @room_playlist << @playlist1
+#   # return @playlist1[:title]
+#
+# end
 
 
 
