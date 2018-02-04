@@ -33,14 +33,11 @@ class Room
 
   end
 
-# 
-# def room_playlist
-#   @room_playlist << @playlist1
-#   # return @playlist1[:title]
-#
-# end
 
-
+def room_playlist(playlist)
+  @room_playlist << playlist
+return @room_playlist.count
+end
 
 
 

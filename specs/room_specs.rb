@@ -58,5 +58,13 @@ class RoomTest <MiniTest::Test
 #
 # end
 
+def test_room_playlist()
+  playlist = @playlist1[:title]
+  # @room.room_playlist(playlist)
+  assert_equal(2, @room.room_playlist)
+
+end
+
+
 
 end
