@@ -14,10 +14,7 @@ def get_song_info
 
 end
 
-def add_song
-  @playlist << @song
 
-end
 
 
 
