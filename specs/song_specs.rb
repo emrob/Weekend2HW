@@ -8,7 +8,7 @@ class SongTest <MiniTest::Test
 
   def setup
     @song = Song.new("Hey Ya", "Outkast", "Hip hop")
-
+    @song1 = Song.new("Thriller", "MJ", "Pop")
   end
 
 
