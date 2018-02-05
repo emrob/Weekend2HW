@@ -6,6 +6,7 @@ class Room
     @number_of_rooms = [1, 2, 3, 4, 5]
     @booked_rooms = []
     @room_playlist = []
+    @room_capacity = []
   end
 
   def number_of_available_rooms()
@@ -19,7 +20,7 @@ class Room
 
   def room_booking()
     check_guests_in()
-    if @booked_rooms.count() > 5
+    if @booked_rooms.count() >= 5
       return "Sorry, all rooms are currenty in use"
     else
       return "Let me show you to your room"
@@ -34,11 +35,24 @@ class Room
   end
 
 
-def add_song
-  @room_playlist << @song
-  return @room_playlist.count
+  def add_song
+    @room_playlist << @song1
+    return @room_playlist.count
 
-end
+  end
+
+
+  def room_capacity
+    if @room_capacity.count() >= 6
+      return "There is no more space in this room"
+    else
+      return "That'll be £20 please"
+    end
+    pay_to_sing()
+
+  end
+
+
 
 
 

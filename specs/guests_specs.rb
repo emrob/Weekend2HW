@@ -10,13 +10,13 @@ class GuestsTest <MiniTest::Test
     @guests = Guests.new("Rose", "Pop", 60)
   end
 
-def test_check_name
-  assert_equal("Rose", @guests.name)
-end
+  def test_check_name
+    assert_equal("Rose", @guests.name)
+  end
 
-def test_pay_to_sing
-  assert_equal(40, @guests.pay_to_sing)
-end
+  def test_pay_to_sing
+    assert_equal(40, @guests.pay_to_sing)
+  end
 
 
 

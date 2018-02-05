@@ -8,10 +8,12 @@ require_relative("../song.rb")
 class RoomTest <MiniTest::Test
 
   def setup
-  @room = Room.new([1, 2, 3, 4, 5])
-  @guests = Guests.new("Marge", "Rap", 90)
-  @song = Song.new("Hey Ya", "Outkast", "Hip hop")
-
+    @room = Room.new([1, 2, 3, 4, 5])
+    @guests = Guests.new("Marge", "Rap", 90)
+    @song1 = Song.new("Hey Ya", "Outkast", "Hip hop")
+    # song2 = Song.new("Thriller", "MJ", "Pop")
+    # song3 = Song.new("Hound Dog", "Elvis", "Rock n Roll")
+    # @playlist = Playlist.new("Greatist Hits", [song1, song2, song3] )
 
   end
 
@@ -32,10 +34,14 @@ class RoomTest <MiniTest::Test
     assert_equal("A room has now become available", @room.check_guests_out_of_room())
   end
 
-def test_add_song
-  assert_equal(1, @room.add_song)
-end
+  def test_add_song
+    assert_equal(1, @room.add_song)
+  end
 
+  def check_room_capacity
+    assert_equal("That'll be £20 please", @room.room_capacity)
+
+  end
 
 
 end
