@@ -34,11 +34,11 @@ class Room
   end
 
 
-def room_playlist(playlist)
-  @room_playlist << playlist
-return @room_playlist.count
-end
+def add_song
+  @room_playlist << @song
+  return @room_playlist.count
 
+end
 
 
 
