@@ -14,7 +14,7 @@ class RoomTest <MiniTest::Test
     song1 = Song.new("Hey Ya", "Outkast", "Hip hop")
     song2 = Song.new("Thriller", "MJ", "Pop")
     song3 = Song.new("Hound Dog", "Elvis", "Rock n Roll")
-    @playlist = Playlist.new("Greatist Hits", [song1, song2, song3] )
+    @playlist = Playlist.new("Greatest Hits", [song1, song2, song3] )
 
   end
 
